@@ -1,0 +1,23 @@
+<%- include("partials/header") -%>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link href="/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
+
+
+    <h1>Compose</h1>
+    <form class="row g-3" action="/Compose" method="post">
+        <div class="form-group">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" style="width:100%" name="postTitle">
+            <label for="post" class="form-label">Post</label>
+            <textarea name="postText" class="form-control" cols="155" rows="5"></textarea>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Publish</button>
+        </div>
+    </form>
+    <%- include("partials/footer") -%>
